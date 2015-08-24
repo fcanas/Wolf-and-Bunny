@@ -7,11 +7,17 @@
 //
 
 import Cocoa
+import Accelerate
+
+let worldSize :vImagePixelCount = 255
+
+let __f :UnsafeMutablePointer<Void> = malloc(Int(worldSize * worldSize))
+let __b :UnsafeMutablePointer<Void> = malloc(Int(worldSize * worldSize))
+let __i :UnsafeMutablePointer<Void> = malloc(Int(worldSize * worldSize))
 
 @NSApplicationMain
+
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
