@@ -9,9 +9,6 @@
 import Cocoa
 import Darwin
 
-var foxes   :Population = Population(items: [], color: NSColor.orangeColor())
-var bunnies :Population = Population(items: [], color: NSColor.grayColor())
-
 let world :UInt32 = 200
 
 enum Direction :Int {
@@ -24,6 +21,9 @@ enum Direction :Int {
 let updateInterval :NSTimeInterval = 0.016
 
 class ViewController: NSViewController {
+    
+    var foxes   :Population = Population(items: [], color: NSColor.orangeColor())
+    var bunnies :Population = Population(items: [], color: NSColor.grayColor())
     
     @IBOutlet var reproductiveAgeSlider :NSSlider?
     @IBOutlet var reproductiveAgeLabel :NSTextField?
@@ -198,16 +198,6 @@ class ViewController: NSViewController {
         }
         
         foxes = cull(foxes)
-        
-        canvas?.foxes = foxes
-        canvas?.bunnies = bunnies
-        
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.canvas?.setNeedsDisplayInRect(self.canvas!.bounds)
-            
-            self.foxLabel?.stringValue = "\(foxes.items.count)🐺"
-            self.rabbitLabel?.stringValue = "🐇\(bunnies.items.count)"
-        }
     }
     
     func tick() {
@@ -215,5 +205,12 @@ class ViewController: NSViewController {
             self.tick_bg()
         }
         
+        canvas?.foxes = foxes
+        canvas?.bunnies = bunnies
+        
+        self.canvas?.setNeedsDisplayInRect(self.canvas!.bounds)
+        
+        self.foxLabel?.stringValue = "\(foxes.items.count)🐺"
+        self.rabbitLabel?.stringValue = "🐇\(bunnies.items.count)"
     }
 }
