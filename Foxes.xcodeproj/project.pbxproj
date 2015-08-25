@@ -14,7 +14,7 @@
 		E7A0E8401B8BB35600AAF367 /* FoxesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0E83F1B8BB35600AAF367 /* FoxesTests.swift */; };
 		E7A0E84B1B8BB35600AAF367 /* FoxesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0E84A1B8BB35600AAF367 /* FoxesUITests.swift */; };
 		E7A0E8591B8BB3DF00AAF367 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0E8581B8BB3DF00AAF367 /* Canvas.swift */; };
-		E7A0E85B1B8BBC2000AAF367 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A0E85A1B8BBC2000AAF367 /* Accelerate.framework */; };
+		E7A0E85F1B8C120200AAF367 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0E85E1B8C120200AAF367 /* Population.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		E7A0E84A1B8BB35600AAF367 /* FoxesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxesUITests.swift; sourceTree = "<group>"; };
 		E7A0E84C1B8BB35600AAF367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A0E8581B8BB3DF00AAF367 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
-		E7A0E85A1B8BBC2000AAF367 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E7A0E85E1B8C120200AAF367 /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7A0E85B1B8BBC2000AAF367 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +79,6 @@
 		E7A0E8211B8BB35500AAF367 = {
 			isa = PBXGroup;
 			children = (
-				E7A0E85A1B8BBC2000AAF367 /* Accelerate.framework */,
 				E7A0E82C1B8BB35500AAF367 /* Foxes */,
 				E7A0E83E1B8BB35600AAF367 /* FoxesTests */,
 				E7A0E8491B8BB35600AAF367 /* FoxesUITests */,
@@ -107,6 +105,7 @@
 				E7A0E8331B8BB35500AAF367 /* Main.storyboard */,
 				E7A0E8361B8BB35500AAF367 /* Info.plist */,
 				E7A0E8581B8BB3DF00AAF367 /* Canvas.swift */,
+				E7A0E85E1B8C120200AAF367 /* Population.swift */,
 			);
 			path = Foxes;
 			sourceTree = "<group>";
@@ -260,6 +259,7 @@
 			files = (
 				E7A0E8301B8BB35500AAF367 /* ViewController.swift in Sources */,
 				E7A0E82E1B8BB35500AAF367 /* AppDelegate.swift in Sources */,
+				E7A0E85F1B8C120200AAF367 /* Population.swift in Sources */,
 				E7A0E8591B8BB3DF00AAF367 /* Canvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +482,7 @@
 				E7A0E8511B8BB35600AAF367 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7A0E8521B8BB35600AAF367 /* Build configuration list for PBXNativeTarget "FoxesTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				E7A0E8541B8BB35600AAF367 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7A0E8551B8BB35600AAF367 /* Build configuration list for PBXNativeTarget "FoxesUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				E7A0E8571B8BB35600AAF367 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

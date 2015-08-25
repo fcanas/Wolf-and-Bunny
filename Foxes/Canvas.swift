@@ -7,22 +7,6 @@
 //
 
 import AppKit
-import Accelerate
-
-struct Point<T :Equatable> {
-    var x :T
-    var y :T
-    var belly :Int
-    var age :Int
-    func overlapping(p:Point<T>) -> Bool {
-        return x == p.x && y == p.y
-    }
-}
-
-struct Population {
-    let items :Array<Point<Int>>
-    let color :NSColor
-}
 
 class Canvas: NSView {
     

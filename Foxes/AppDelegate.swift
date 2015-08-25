@@ -7,13 +7,6 @@
 //
 
 import Cocoa
-import Accelerate
-
-let worldSize :vImagePixelCount = 255
-
-let __f :UnsafeMutablePointer<Void> = malloc(Int(worldSize * worldSize))
-let __b :UnsafeMutablePointer<Void> = malloc(Int(worldSize * worldSize))
-let __i :UnsafeMutablePointer<Void> = malloc(Int(worldSize * worldSize))
 
 @NSApplicationMain
 
