@@ -669,7 +669,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Foxes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="399" height="452"/>
+                        <rect key="frame" x="0.0" y="0.0" width="666" height="452"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Pyx-fv-JnZ" customClass="Canvas" customModule="Foxes" customModuleProvider="target">
@@ -688,8 +688,80 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-Cx-wrG">
-                                <rect key="frame" x="343" y="20" width="38" height="17"/>
+                                <rect key="frame" x="610" y="20" width="38" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Label" id="NjX-HE-fcd">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mhv-w6-TIX">
+                                <rect key="frame" x="408" y="393" width="242" height="20"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="qhF-PW-TiE"/>
+                                <connections>
+                                    <action selector="age:" target="XfG-lQ-9wD" id="rk7-ct-bv2"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-33-hHN">
+                                <rect key="frame" x="408" y="419" width="114" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Reproductive Age" id="hvb-6z-bOR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Xl-7j-Q2i">
+                                <rect key="frame" x="408" y="336" width="242" height="20"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="1000" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="77q-c3-Gt3"/>
+                                <connections>
+                                    <action selector="reproduction:" target="XfG-lQ-9wD" id="voB-B2-Qse"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KF3-h8-wmJ">
+                                <rect key="frame" x="408" y="361" width="188" height="26"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="🐺  Reproductive Threshold" id="cjs-b6-Qgd">
+                                    <font key="font" size="13" name="AppleColorEmoji"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LsM-zu-Oa5">
+                                <rect key="frame" x="408" y="279" width="242" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="SKU-BV-azk"/>
+                                </constraints>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="9qU-ZJ-YJd"/>
+                                <connections>
+                                    <action selector="hunt:" target="XfG-lQ-9wD" id="GK3-wA-pR7"/>
+                                </connections>
+                            </slider>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3A3-EH-7eB">
+                                <rect key="frame" x="408" y="304" width="87" height="26"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="🐺  Hunt Rate" id="STi-1o-GFh">
+                                    <font key="font" size="13" name="AppleColorEmoji"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="miV-4Y-fo1">
+                                <rect key="frame" x="608" y="311" width="38" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="PuP-cj-uGS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bK2-A5-FDG">
+                                <rect key="frame" x="608" y="368" width="38" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="60t-CJ-GOs">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dnZ-CZ-Zat">
+                                <rect key="frame" x="608" y="419" width="38" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="w0g-NS-kW2">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -698,24 +770,50 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="Pyx-fv-JnZ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="52e-9c-n4M"/>
+                            <constraint firstItem="3A3-EH-7eB" firstAttribute="top" secondItem="4Xl-7j-Q2i" secondAttribute="bottom" constant="8" id="5z2-bo-geA"/>
+                            <constraint firstItem="KF3-h8-wmJ" firstAttribute="top" secondItem="Mhv-w6-TIX" secondAttribute="bottom" constant="8" id="7ap-cE-UDQ"/>
                             <constraint firstAttribute="bottom" secondItem="cE3-Cx-wrG" secondAttribute="bottom" constant="20" id="8UL-y0-veO"/>
+                            <constraint firstItem="KF3-h8-wmJ" firstAttribute="leading" secondItem="3A3-EH-7eB" secondAttribute="leading" id="CRY-Xm-Mft"/>
+                            <constraint firstAttribute="trailing" secondItem="dnZ-CZ-Zat" secondAttribute="trailing" constant="22" id="ESp-P4-SUd"/>
+                            <constraint firstAttribute="trailing" secondItem="bK2-A5-FDG" secondAttribute="trailing" constant="22" id="EUH-dP-bIX"/>
+                            <constraint firstItem="3A3-EH-7eB" firstAttribute="leading" secondItem="LsM-zu-Oa5" secondAttribute="leading" id="G7D-JG-qMT"/>
+                            <constraint firstAttribute="trailing" secondItem="miV-4Y-fo1" secondAttribute="trailing" constant="22" id="Gpi-ff-GNr"/>
+                            <constraint firstItem="Mhv-w6-TIX" firstAttribute="leading" secondItem="4Xl-7j-Q2i" secondAttribute="leading" id="Hz9-Ou-p4B"/>
                             <constraint firstItem="Pyx-fv-JnZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="IX5-Aj-j5Q"/>
+                            <constraint firstItem="miV-4Y-fo1" firstAttribute="baseline" secondItem="3A3-EH-7eB" secondAttribute="baseline" id="KMg-xA-xWx"/>
+                            <constraint firstItem="4Xl-7j-Q2i" firstAttribute="width" secondItem="LsM-zu-Oa5" secondAttribute="width" id="KuW-AH-v3c"/>
+                            <constraint firstItem="4Xl-7j-Q2i" firstAttribute="top" secondItem="KF3-h8-wmJ" secondAttribute="bottom" constant="7" id="LHp-lx-sfe"/>
+                            <constraint firstItem="Mhv-w6-TIX" firstAttribute="top" secondItem="Kao-33-hHN" secondAttribute="bottom" constant="8" id="OzB-hI-Dio"/>
+                            <constraint firstAttribute="trailing" secondItem="LsM-zu-Oa5" secondAttribute="trailing" constant="18" id="SIX-iV-IgL"/>
+                            <constraint firstItem="LsM-zu-Oa5" firstAttribute="top" secondItem="3A3-EH-7eB" secondAttribute="bottom" constant="7" id="T0M-MN-aaV"/>
                             <constraint firstItem="k5I-0s-1oS" firstAttribute="top" secondItem="Pyx-fv-JnZ" secondAttribute="bottom" constant="15" id="T7K-p0-Nmm"/>
                             <constraint firstItem="k5I-0s-1oS" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="UL0-PT-TYF"/>
-                            <constraint firstItem="Pyx-fv-JnZ" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="XmJ-qr-2TS"/>
+                            <constraint firstItem="bK2-A5-FDG" firstAttribute="baseline" secondItem="KF3-h8-wmJ" secondAttribute="baseline" id="btq-eh-jNZ"/>
                             <constraint firstAttribute="trailing" secondItem="cE3-Cx-wrG" secondAttribute="trailing" constant="20" id="d85-0M-XTG"/>
+                            <constraint firstItem="dnZ-CZ-Zat" firstAttribute="baseline" secondItem="Kao-33-hHN" secondAttribute="baseline" id="dtm-Ja-DIJ"/>
                             <constraint firstItem="cE3-Cx-wrG" firstAttribute="centerY" secondItem="k5I-0s-1oS" secondAttribute="centerY" id="fmd-ka-ztF"/>
+                            <constraint firstItem="LsM-zu-Oa5" firstAttribute="leading" secondItem="Pyx-fv-JnZ" secondAttribute="trailing" constant="10" id="krb-Jl-gi0"/>
+                            <constraint firstItem="Kao-33-hHN" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="16" id="pRZ-WU-42c"/>
+                            <constraint firstItem="4Xl-7j-Q2i" firstAttribute="leading" secondItem="LsM-zu-Oa5" secondAttribute="leading" id="sVe-CB-Aqm"/>
+                            <constraint firstItem="Mhv-w6-TIX" firstAttribute="width" secondItem="4Xl-7j-Q2i" secondAttribute="width" id="spb-4T-p9Z"/>
+                            <constraint firstItem="Kao-33-hHN" firstAttribute="leading" secondItem="KF3-h8-wmJ" secondAttribute="leading" id="zlt-C4-Ggl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="canvas" destination="Pyx-fv-JnZ" id="LdP-vH-hcl"/>
                         <outlet property="foxLabel" destination="cE3-Cx-wrG" id="wGr-Gj-dEn"/>
+                        <outlet property="huntRateLabel" destination="miV-4Y-fo1" id="Huv-V6-tLM"/>
+                        <outlet property="huntRateSlider" destination="LsM-zu-Oa5" id="wIN-hD-KCO"/>
                         <outlet property="rabbitLabel" destination="k5I-0s-1oS" id="OPx-2h-avn"/>
+                        <outlet property="reproductiveAgeLabel" destination="dnZ-CZ-Zat" id="0VK-Bq-R7r"/>
+                        <outlet property="reproductiveAgeSlider" destination="Mhv-w6-TIX" id="LeT-3N-H22"/>
+                        <outlet property="reproductiveThresholdLabel" destination="bK2-A5-FDG" id="7UL-z9-T3c"/>
+                        <outlet property="reproductiveThresholdSlider" destination="4Xl-7j-Q2i" id="zjE-qC-GDX"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74.5" y="797.5"/>
+            <point key="canvasLocation" x="208" y="797"/>
         </scene>
     </scenes>
 </document>
