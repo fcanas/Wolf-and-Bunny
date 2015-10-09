@@ -22,6 +22,8 @@ let updateInterval :NSTimeInterval = 0.016
 
 class ViewController: NSViewController {
     
+    let simulationQueue = dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)
+    
     var foxes   :Population = Population(items: [], color: NSColor.orangeColor())
     var bunnies :Population = Population(items: [], color: NSColor.grayColor())
     
@@ -116,7 +118,7 @@ class ViewController: NSViewController {
     }
     
     func tick() {
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)) { () -> Void in
+        dispatch_async(simulationQueue) { () -> Void in
             self.tick_bg()
         }
         
